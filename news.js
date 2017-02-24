@@ -73,5 +73,5 @@ passport.deserializeUser(function(id, done) {
 
 
 
-app.listen(8081);
-console.log('Express server listening on port 8081');
+app.listen(80);
+console.log('Express server listening on port 80');
