@@ -1,0 +1,16 @@
+<div id="newsitem">
+    <h2><a href="{{urls.title}}">{{item.title}}</a></h2>
+    <p>{{item.description}}</p>
+    <p class="date">
+	<span id="author">Posted by: <i>{{item.user.name}}</i></span>
+	<span>
+	    <img src="images/more.gif" alt="" /> <a href="{{item.urls.more}}">Read more</a> 
+	</span>
+	<span>
+	    <img src="images/comment.gif" alt="" /> <a href="{{item.urls.comments}}">Comments({{item.comments}})</a> 
+	</span>
+	<span>
+	    <img src="images/timeicon.gif" alt="" /> {{item.submit_date}}
+	</span>
+    </p>
+</div>

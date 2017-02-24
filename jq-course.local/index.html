@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Language" content="English" />
+	<meta name="Description" content="Internet Jobs" />
+
+	
+	
+
+	<script src="scripts/jquery.js" ></script>
+	<script src="scripts/jquery-ui.js" ></script>
+
+	<script src="scripts/handlebars-v4.0.5.js"></script>
+	
+	<script src="scripts/loadTemplate.js" ></script>
+    <script src="scripts/autocomplete.js" ></script>
+	<script src="scripts/accordion.js" ></script>
+	<script src="scripts/login.js" ></script>
+	<script src="scripts/pagination.js" ></script>
+	<script src="scripts/quote.js" ></script>
+	
+	<link rel="stylesheet" type="text/css" href="styles/jquery-ui.css" />
+	<link rel="stylesheet" type="text/css" href="styles/style.css" />
+
+
+
+	<title>Internet News</title>
+    </head>
+    <body>
+	<div id="header">
+	    <div id="logo">
+			<p class="slogan"><b>Connecting Online people</b><br/>Sharing IT trends</p>
+			<div style="float: left;">
+			    <h1><a href="#">Internet News</a></h1>
+			</div>
+	    </div>
+	    <div id="hmenu">
+			<a href="#">Home</a><a href="#">Browse News</a><a href="#">Submit News</a>
+	    </div>
+	    <div id="hlogin">
+			<p>Hi,  You can <a href="#" onclick="openLoginForm()">Login</a> or <a href="#" onclick="openRegisterForm()">Register</a> here.</p>
+	    </div>
+	</div>
+
+	<div id="loginRegisterForm"></div>
+	<div class="content">
+	    <div id="articles">
+		<div id="left">
+
+		    <div id="newsbox">
+			<h1>New posts</h1>
+			<div id="newsitems"></div>
+
+			<div id="pagination">
+			    <div id="prev">
+				<button onclick='prevPage()'>Prev</button>
+			    </div>
+			    <div id="pagenum"></div>
+			    <div id="next">
+				<button onclick="nextPage()">Next</button>
+			    </div>
+			</div>
+
+		    </div>
+
+
+		</div>
+
+		<div id="right">
+
+		    <div id="searchform">
+			<form method="post" class="search" action="/">
+			    <p>
+					<input name="pojam" class="text" id="pojam" type="text"/>
+					<input name="search" class="button" value="Search" type="submit" />
+			    </p>
+			</form>
+		    </div>
+
+		    <div id="rightmenu">
+				<div id="navaccordion">
+				</div>
+		    </div>
+
+		    <div class="rightarticle">
+				<p>Lorem ipsum dolor sit amet, <a href="#">consectetuer adipiscing elit</a>, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, <a href="#">quis nostrud exerci</a>.</p>
+		    </div>					
+
+		    <div class="rightarticle_ad">
+			<a href="#">Featured Posts</a>
+		    </div>
+		    <div class="rightarticle_ad">
+			<a href="#">Top 10 News</a>
+		    </div>
+		</div>
+	    </div>
+	    <div id="links">
+		<p></p>		
+	    </div>
+	</div>
+
+	<div id="additional">
+	    <p><b>Lovely Quote: </b><span id="lovelyquote"></span></p>
+	</div>
+
+	<div id="whiteline"></div>
+
+	<div id="footer">
+	    <p style="float: left;"><a href="#">Archive</a><img src="images/separator.gif" alt="" /><a href="#">RSS Feed</a>
+		<br /><a href="#">CSS</a> and <a href="#">XHTML</a><img src="images/separator.gif" alt="" /><a href="#">Accessibility</a></p>
+	    <p style="float: right; text-align: right;"><a href="#">Contact Us</a><br />
+		&copy; 2011, <a href="#" title="Internet Jobs">Internet Jobs</a></p>
+	</div>
+    </body>	
+</html>
